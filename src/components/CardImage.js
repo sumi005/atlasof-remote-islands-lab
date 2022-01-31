@@ -1,9 +1,11 @@
 import React from 'react';
 import '../App.css';
 
-function CardImage() {
+function CardImage(props) {
   return(
-    <div className="card-image"></div>
+    <div className="card-image">
+        <img src= {props.image} alt= "pic"/>
+    </div>
   );
 }
 
